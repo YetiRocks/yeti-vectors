@@ -1,0 +1,16 @@
+name: Yeti Vectors
+enabled: true
+extension: true
+version: "0.1.0"
+
+schemas:
+  - schema.graphql
+
+resources:
+  - resources/*.rs
+
+# fastembed for local ONNX-based text and image embedding
+# base64 for decoding image Bytes fields
+dependencies:
+  fastembed: "4"
+  base64: "0.22"

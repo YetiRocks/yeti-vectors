@@ -1,0 +1,6 @@
+type EmbeddingCache @table(database: "yeti-vectors") @export {
+  id: String @primaryKey
+  model: String
+  embedding: [Float]
+  createdAt: Int
+}
