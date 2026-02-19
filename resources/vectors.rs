@@ -1,6 +1,5 @@
 use yeti_core::prelude::*;
-use std::path::PathBuf;
-use std::sync::{Arc, Mutex, OnceLock};
+use std::sync::Mutex;
 
 // ============================================================================
 // Model Cache Directory (dylib-local static — set from on_ready)
